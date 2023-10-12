@@ -20,7 +20,7 @@ const Nav1 = ({ activePage, handlePageSwitch }) => {
                 onClick={() => handlePageSwitch(2)}
             >
                 <button className="text-sm w-6 h-6 mr-2 rounded-full bg-[#abb0bf]">2</button>
-                Business Information
+                Business {window.innerWidth <= 800 ? "" : "Information"}
             </button>
             <button
                 className={`p-5 flex items-center justify-center truncate text-sm md:text-md xl:text-xl ${activePage === 3 ? "from-[#A6E3FF] to-[#6AAAFB] bg-gradient-to-r shadow-md text-white " : ""

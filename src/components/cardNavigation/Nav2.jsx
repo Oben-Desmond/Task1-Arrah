@@ -15,7 +15,7 @@ const Nav2 = ({ activePage, handlePageSwitch }) => {
                 </div>
                 <div onClick={() => handlePageSwitch(2)} className="flex items-center justify-center truncate text-sm md:text-md xl:text-xl">
                     <motion.button initial={{ scale: 0.4, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="text-sm w-5 h-5 mr-1 rounded-full bg-white text-arrah-blue-accent ">2</motion.button>
-                    Business Information
+                    Business {window.innerWidth <= 800 ? "" : "Information"}
                 </div>
             </motion.button>
             <button

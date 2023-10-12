@@ -15,7 +15,7 @@ const Nav3 = ({ activePage, handlePageSwitch }) => {
                 </div>
                 <div onClick={() => handlePageSwitch(2)} className="flex items-center line-clamp-1 truncate  justify-center">
                     <motion.button className="text-sm w-6 h-6 mr-2 rounded-full bg-white text-arrah-blue-accent">2</motion.button>
-                    Business Information
+                    Business {window.innerWidth <= 800 ? "" : "Information"}
                 </div>
                 <div onClick={() => handlePageSwitch(3)} className="flex items-center justify-center truncate ">
                     <motion.button initial={{ scale: 0.4, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="text-sm w-6 h-6 mr-2 rounded-full bg-white text-arrah-blue-accent ">3</motion.button>
