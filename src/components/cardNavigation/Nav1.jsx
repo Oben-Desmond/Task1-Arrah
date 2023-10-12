@@ -29,7 +29,7 @@ const Nav1 = ({ activePage, handlePageSwitch }) => {
                 onClick={() => handlePageSwitch(3)}
             >
                 <button className="text-sm w-6 h-6 mr-2 rounded-full bg-[#abb0bf]">3</button>
-                Additional Users
+                Additional Info
             </button>
         </nav>
     )
